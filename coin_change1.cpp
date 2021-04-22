@@ -18,7 +18,7 @@ int coin_change1(int coin[], int sum, int n)
             {
                 if(coin[i-1] <= sum)
                 {
-                    dp[i][j] = dp[i-1][j-coin[i-1]]+ dp[i-1][j];
+                    dp[i][j] = dp[i][j-coin[i-1]]+ dp[i-1][j];
                     
                 }
                 else{
